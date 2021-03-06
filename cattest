@@ -1,0 +1,54 @@
+from catfunc import Cat
+pets = [
+{
+     "name": "Феликс",
+     "gender": "Мальчик",
+     "age": "2",
+    "hozjain": "Polina",
+     "hoz_balance": 321
+    },
+{
+     "name": "Гоша",
+     "gender": "Мальчик",
+     "age": "1",
+    "hozjain": "Maksim",
+     "hoz_balance": 2583
+    },
+{
+     "name": "Барон",
+     "gender": "Мальчик",
+     "age": "2",
+     "hozjain": "Andrej",
+     "hoz_balance": 1501
+    },
+{
+     "name": "Мухтар",
+     "gender": "Мальчик",
+     "age": "0.5",
+     "hozjain": "Valera",
+     "hoz_balance": 5631
+    },
+{
+     "name": "Линда",
+     "gender": "Девочка",
+     "age": "2",
+     "hozjain": "Anatolij",
+     "hoz_balance": 542
+    },
+{
+     "name": "Сэм",
+     "gender": "Мальчик",
+     "age": "2",
+     "hozjain": "Kyzma",
+     "hoz_balance": 932
+    },
+]
+print("-----------------------------")
+for curr_pet in pets:
+    pet = Cat(name = curr_pet.get("name"),gender = curr_pet.get("gender"), age = curr_pet.get("age"),hozjain = curr_pet.get("hozjain"),hoz_balance = curr_pet.get("hoz_balance"))
+    print(pet.name)
+    print(pet.gender)
+    print(pet.age+" года")
+    print("Хозяин: " + pet.hozjain)
+    print("Количество рублей: " + str(pet.hoz_balance))
+    print("-----------------------------")
