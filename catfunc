@@ -1,0 +1,17 @@
+class Cat:
+    def __init__(self, name, gender, age, hozjain, hoz_balance):
+        self.name = name
+        self.gender = gender
+        self.age = age
+        self.hozjain = hozjain
+        self.hoz_balance = hoz_balance
+    def get_name(self):
+        return self.name
+    def get_gender(self):
+        return self.gender
+    def get_age(self):
+        return self.age
+    def get_hozjain(self):
+        return self.hozjain
+    def get_hoz_balance(self):
+        return self.hoz_balance
